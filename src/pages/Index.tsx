@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -162,21 +163,21 @@ const Index = () => {
                 location: "New York, USA",
                 price: "$299",
                 rating: 4.8,
-                image: "/placeholder.svg"
+                image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop"
               },
               {
                 name: "Ocean View Resort",
                 location: "Maldives",
                 price: "$599",
                 rating: 4.9,
-                image: "/placeholder.svg"
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
               },
               {
                 name: "Mountain Lodge",
                 location: "Swiss Alps",
                 price: "$399",
                 rating: 4.7,
-                image: "/placeholder.svg"
+                image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop"
               }
             ].map((hotel, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
