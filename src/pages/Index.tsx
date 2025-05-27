@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Calendar, Users, Star, Search, Menu, User, LogIn, UserPlus, Phone, Mail, Clock } from "lucide-react";
+import BookingSection from "@/components/BookingSection";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -150,68 +150,8 @@ const Index = () => {
           </Card>
         </div>
 
-        {/* Featured Hotels */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Featured Hotels
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Grand Plaza Hotel",
-                location: "New York, USA",
-                price: "$299",
-                rating: 4.8,
-                image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop"
-              },
-              {
-                name: "Ocean View Resort",
-                location: "Maldives",
-                price: "$599",
-                rating: 4.9,
-                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
-              },
-              {
-                name: "Mountain Lodge",
-                location: "Swiss Alps",
-                price: "$399",
-                rating: 4.7,
-                image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop"
-              }
-            ].map((hotel, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video bg-gray-200 relative">
-                  <img 
-                    src={hotel.image} 
-                    alt={hotel.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-white px-2 py-1 rounded-full flex items-center gap-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium">{hotel.rating}</span>
-                  </div>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg">{hotel.name}</CardTitle>
-                  <p className="text-gray-600 flex items-center gap-1">
-                    <MapPin className="h-4 w-4" />
-                    {hotel.location}
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <span className="text-2xl font-bold text-blue-600">{hotel.price}</span>
-                      <span className="text-gray-500"> /night</span>
-                    </div>
-                    <Button>Book Now</Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+        {/* Booking Section */}
+        <BookingSection />
 
         {/* Why Choose Us */}
         <div className="text-center">
