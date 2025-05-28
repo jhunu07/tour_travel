@@ -1,66 +1,51 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Heart, Shield, Globe, Award, Users, Star, MapPin, Clock } from "lucide-react";
-
 const About = () => {
-  const values = [
-    {
-      icon: Heart,
-      title: "Customer First",
-      bgColor: "bg-red-100",
-      iconColor: "text-red-600"
-    },
-    {
-      icon: Shield,
-      title: "Trust & Security",
-      bgColor: "bg-blue-100",
-      iconColor: "text-blue-600"
-    },
-    {
-      icon: Globe,
-      title: "Global Reach",
-      bgColor: "bg-green-100",
-      iconColor: "text-green-600"
-    },
-    {
-      icon: Award,
-      title: "Excellence",
-      bgColor: "bg-purple-100",
-      iconColor: "text-purple-600"
-    }
-  ];
-
-  const highlights = [
-    {
-      icon: Users,
-      title: "5M+ Happy Travelers",
-      description: "Millions of satisfied customers worldwide trust us for their travel needs",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop"
-    },
-    {
-      icon: MapPin,
-      title: "200+ Countries",
-      description: "Extensive global network covering every corner of the world",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop"
-    },
-    {
-      icon: Star,
-      title: "Award Winning Service",
-      description: "Recognized globally for outstanding customer service and innovation",
-      image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&h=400&fit=crop"
-    },
-    {
-      icon: Clock,
-      title: "24/7 Support",
-      description: "Round-the-clock assistance whenever and wherever you need us",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+  const values = [{
+    icon: Heart,
+    title: "Customer First",
+    bgColor: "bg-red-100",
+    iconColor: "text-red-600"
+  }, {
+    icon: Shield,
+    title: "Trust & Security",
+    bgColor: "bg-blue-100",
+    iconColor: "text-blue-600"
+  }, {
+    icon: Globe,
+    title: "Global Reach",
+    bgColor: "bg-green-100",
+    iconColor: "text-green-600"
+  }, {
+    icon: Award,
+    title: "Excellence",
+    bgColor: "bg-purple-100",
+    iconColor: "text-purple-600"
+  }];
+  const highlights = [{
+    icon: Users,
+    title: "5M+ Happy Travelers",
+    description: "Millions of satisfied customers worldwide trust us for their travel needs",
+    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop"
+  }, {
+    icon: MapPin,
+    title: "200+ Countries",
+    description: "Extensive global network covering every corner of the world",
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop"
+  }, {
+    icon: Star,
+    title: "Award Winning Service",
+    description: "Recognized globally for outstanding customer service and innovation",
+    image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&h=400&fit=crop"
+  }, {
+    icon: Clock,
+    title: "24/7 Support",
+    description: "Round-the-clock assistance whenever and wherever you need us",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       {/* Navigation */}
       <nav className="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
@@ -117,11 +102,7 @@ const About = () => {
             </div>
           </div>
           <div className="animate-scale-in">
-            <img 
-              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=400&fit=crop" 
-              alt="Our journey" 
-              className="rounded-2xl shadow-2xl"
-            />
+            <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=400&fit=crop" alt="Our journey" className="rounded-2xl shadow-2xl" />
           </div>
         </div>
 
@@ -131,15 +112,10 @@ const About = () => {
           
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
-              {highlights.map((highlight, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+              {highlights.map((highlight, index) => <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <Card className="h-full border-0 bg-white/80 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-2xl group overflow-hidden">
                     <div className="relative overflow-hidden">
-                      <img 
-                        src={highlight.image} 
-                        alt={highlight.title}
-                        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-                      />
+                      <img src={highlight.image} alt={highlight.title} className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                       <div className="absolute bottom-4 left-4">
                         <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 mb-2">
@@ -152,8 +128,7 @@ const About = () => {
                       <p className="text-gray-600 leading-relaxed">{highlight.description}</p>
                     </CardContent>
                   </Card>
-                </CarouselItem>
-              ))}
+                </CarouselItem>)}
             </CarouselContent>
             <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
@@ -165,44 +140,17 @@ const About = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Core Values</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <Card key={index} className="text-center p-6 border-0 bg-white/80 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-xl group">
+            {values.map((value, index) => <Card key={index} className="text-center p-6 border-0 bg-white/80 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-xl group">
                 <div className={`w-16 h-16 ${value.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110`}>
                   <value.icon className={`h-8 w-8 ${value.iconColor}`} />
                 </div>
                 <h3 className="text-xl font-semibold">{value.title}</h3>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
         {/* Innovation Section */}
-        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-12 mb-16">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Innovation at Heart</h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              We're constantly pushing boundaries with AI-powered recommendations, sustainable travel initiatives, 
-              and cutting-edge mobile technology to create seamless booking experiences.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="text-5xl mb-4">🤖</div>
-                <h3 className="text-xl font-semibold mb-2">AI-Powered</h3>
-                <p className="text-gray-600">Smart recommendations based on your preferences</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl mb-4">🌱</div>
-                <h3 className="text-xl font-semibold mb-2">Eco-Friendly</h3>
-                <p className="text-gray-600">Promoting sustainable travel practices</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl mb-4">📱</div>
-                <h3 className="text-xl font-semibold mb-2">Mobile-First</h3>
-                <p className="text-gray-600">Seamless experience across all devices</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
@@ -210,17 +158,11 @@ const About = () => {
           <p className="text-xl mb-8 opacity-90">
             Join millions of travelers who trust StayBooker for their perfect getaway
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-blue-600 hover:bg-gray-100 transition-all duration-300 hover:scale-105"
-            onClick={() => window.location.href = '/'}
-          >
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 transition-all duration-300 hover:scale-105" onClick={() => window.location.href = '/'}>
             Start Your Journey Today
           </Button>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
