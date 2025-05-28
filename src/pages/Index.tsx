@@ -120,10 +120,10 @@ const Index = () => {
               <a href="/location" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
                 Locations
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+              <a href="/about" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
                 About
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+              <a href="/contact" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
                 Contact
               </a>
               <div className="flex items-center space-x-2">
@@ -158,10 +158,10 @@ const Index = () => {
                 <a href="/location" className="text-gray-600 hover:text-blue-600 transition-colors">
                   Locations
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
                   About
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
                   Contact
                 </a>
                 <div className="flex flex-col space-y-2">
@@ -360,7 +360,7 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">About Us</h4>
               <ul className="space-y-2 text-gray-300">
-                <li className="hover:text-white transition-colors cursor-pointer">Our Story</li>
+                <li><a href="/about" className="hover:text-white transition-colors cursor-pointer">Our Story</a></li>
                 <li className="hover:text-white transition-colors cursor-pointer">Mission & Vision</li>
                 <li className="hover:text-white transition-colors cursor-pointer">Our Team</li>
                 <li className="hover:text-white transition-colors cursor-pointer">Careers</li>
@@ -389,6 +389,11 @@ const Index = () => {
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-blue-400" />
                   <span>24/7 Customer Support</span>
+                </div>
+                <div className="mt-4">
+                  <a href="/contact" className="text-blue-400 hover:text-white transition-colors">
+                    Contact Us →
+                  </a>
                 </div>
               </div>
             </div>
