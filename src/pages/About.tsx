@@ -1,27 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Shield, Globe, Award } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Heart, Shield, Globe, Award, Users, Star, MapPin, Clock } from "lucide-react";
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: "Sarah Johnson",
-      role: "CEO & Founder",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Michael Chen",
-      role: "CTO",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Head of Operations",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
-    }
-  ];
-
   const values = [
     {
       icon: Heart,
@@ -46,6 +29,33 @@ const About = () => {
       title: "Excellence",
       bgColor: "bg-purple-100",
       iconColor: "text-purple-600"
+    }
+  ];
+
+  const highlights = [
+    {
+      icon: Users,
+      title: "5M+ Happy Travelers",
+      description: "Millions of satisfied customers worldwide trust us for their travel needs",
+      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop"
+    },
+    {
+      icon: MapPin,
+      title: "200+ Countries",
+      description: "Extensive global network covering every corner of the world",
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop"
+    },
+    {
+      icon: Star,
+      title: "Award Winning Service",
+      description: "Recognized globally for outstanding customer service and innovation",
+      image: "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=600&h=400&fit=crop"
+    },
+    {
+      icon: Clock,
+      title: "24/7 Support",
+      description: "Round-the-clock assistance whenever and wherever you need us",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
     }
   ];
 
@@ -74,18 +84,22 @@ const About = () => {
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
             About StayBooker
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Making travel accessible and unforgettable for everyone since 2018.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Revolutionizing travel experiences with cutting-edge technology and unparalleled customer service since 2018.
           </p>
         </div>
 
         {/* Story Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="animate-slide-up">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              StayBooker was founded to make hotel booking simple and transparent. 
-              We partner with hotels worldwide to ensure every traveler finds their perfect stay.
+              Born from a vision to democratize travel, StayBooker emerged as a game-changer in the hospitality industry. 
+              We leverage advanced AI and machine learning to connect travelers with their perfect accommodations.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Our proprietary matching algorithm considers over 200 factors to ensure every booking exceeds expectations, 
+              while our blockchain-powered security ensures transparent, fraud-free transactions.
             </p>
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center">
@@ -111,9 +125,44 @@ const About = () => {
           </div>
         </div>
 
+        {/* Highlights Carousel */}
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">What Makes Us Special</h2>
+          
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent>
+              {highlights.map((highlight, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <Card className="h-full border-0 bg-white/80 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-2xl group overflow-hidden">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={highlight.image} 
+                        alt={highlight.title}
+                        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-4 left-4">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 mb-2">
+                          <highlight.icon className="h-6 w-6 text-blue-600" />
+                        </div>
+                      </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold text-gray-800 mb-3">{highlight.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{highlight.description}</p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
+        </div>
+
         {/* Values Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Values</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Core Values</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
@@ -127,41 +176,46 @@ const About = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Team</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 bg-white/90 backdrop-blur-sm">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium">{member.role}</p>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Innovation Section */}
+        <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-12 mb-16">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-gray-800 mb-6">Innovation at Heart</h2>
+            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+              We're constantly pushing boundaries with AI-powered recommendations, sustainable travel initiatives, 
+              and cutting-edge mobile technology to create seamless booking experiences.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-5xl mb-4">🤖</div>
+                <h3 className="text-xl font-semibold mb-2">AI-Powered</h3>
+                <p className="text-gray-600">Smart recommendations based on your preferences</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl mb-4">🌱</div>
+                <h3 className="text-xl font-semibold mb-2">Eco-Friendly</h3>
+                <p className="text-gray-600">Promoting sustainable travel practices</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl mb-4">📱</div>
+                <h3 className="text-xl font-semibold mb-2">Mobile-First</h3>
+                <p className="text-gray-600">Seamless experience across all devices</p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
-          <h2 className="text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
+          <h2 className="text-4xl font-bold mb-4">Ready to Experience the Future of Travel?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join millions of travelers who trust StayBooker
+            Join millions of travelers who trust StayBooker for their perfect getaway
           </p>
           <Button 
             size="lg" 
             className="bg-white text-blue-600 hover:bg-gray-100 transition-all duration-300 hover:scale-105"
             onClick={() => window.location.href = '/'}
           >
-            Start Booking Now
+            Start Your Journey Today
           </Button>
         </div>
       </div>
