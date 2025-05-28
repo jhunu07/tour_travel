@@ -35,7 +35,7 @@ const BookingSection = () => {
       id: 1,
       name: "Grand Plaza Hotel",
       location: "New York, USA",
-      price: "$299",
+      price: "₹24,999",
       rating: 4.8,
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop",
       description: "Luxury hotel in the heart of Manhattan with stunning city views and world-class amenities."
@@ -44,7 +44,7 @@ const BookingSection = () => {
       id: 2,
       name: "Ocean View Resort",
       location: "Maldives",
-      price: "$599",
+      price: "₹49,999",
       rating: 4.9,
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
       description: "Tropical paradise resort with overwater bungalows and pristine beaches."
@@ -53,7 +53,7 @@ const BookingSection = () => {
       id: 3,
       name: "Mountain Lodge",
       location: "Swiss Alps",
-      price: "$399",
+      price: "₹33,299",
       rating: 4.7,
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop",
       description: "Cozy alpine lodge with breathtaking mountain views and ski-in/ski-out access."

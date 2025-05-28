@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,7 +14,7 @@ const Index = () => {
       name: "Paris, France",
       image: "https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=500&h=300&fit=crop",
       hotels: "245 hotels",
-      price: "From $120/night",
+      price: "From ₹10,000/night",
       rating: 4.8
     },
     {
@@ -23,7 +22,7 @@ const Index = () => {
       name: "Tokyo, Japan",
       image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&h=300&fit=crop",
       hotels: "189 hotels",
-      price: "From $95/night",
+      price: "From ₹7,900/night",
       rating: 4.9
     },
     {
@@ -31,7 +30,7 @@ const Index = () => {
       name: "New York, USA",
       image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=500&h=300&fit=crop",
       hotels: "312 hotels",
-      price: "From $150/night",
+      price: "From ₹12,500/night",
       rating: 4.7
     },
     {
@@ -39,7 +38,7 @@ const Index = () => {
       name: "Bali, Indonesia",
       image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500&h=300&fit=crop",
       hotels: "156 hotels",
-      price: "From $65/night",
+      price: "From ₹5,400/night",
       rating: 4.8
     },
     {
@@ -47,7 +46,7 @@ const Index = () => {
       name: "Dubai, UAE",
       image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&h=300&fit=crop",
       hotels: "98 hotels",
-      price: "From $180/night",
+      price: "From ₹15,000/night",
       rating: 4.9
     },
     {
@@ -55,7 +54,7 @@ const Index = () => {
       name: "London, UK",
       image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&h=300&fit=crop",
       hotels: "278 hotels",
-      price: "From $110/night",
+      price: "From ₹9,200/night",
       rating: 4.6
     }
   ];
