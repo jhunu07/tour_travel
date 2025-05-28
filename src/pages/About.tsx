@@ -1,27 +1,24 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Calendar, Users, Star, Award, Globe, Heart, Shield } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Heart, Shield, Globe, Award } from "lucide-react";
 
 const About = () => {
   const teamMembers = [
     {
       name: "Sarah Johnson",
       role: "CEO & Founder",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=400&h=400&fit=crop&crop=face",
-      description: "Former hospitality executive with 15+ years of experience"
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Michael Chen",
       role: "CTO",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      description: "Tech innovator passionate about travel technology"
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
     },
     {
       name: "Emily Rodriguez",
       role: "Head of Operations",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      description: "Operations specialist ensuring seamless customer experience"
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
     }
   ];
 
@@ -29,28 +26,24 @@ const About = () => {
     {
       icon: Heart,
       title: "Customer First",
-      description: "Every decision we make is guided by what's best for our travelers",
       bgColor: "bg-red-100",
       iconColor: "text-red-600"
     },
     {
       icon: Shield,
       title: "Trust & Security",
-      description: "Your safety and security are our top priorities",
       bgColor: "bg-blue-100",
       iconColor: "text-blue-600"
     },
     {
       icon: Globe,
       title: "Global Reach",
-      description: "Connecting travelers to amazing experiences worldwide",
       bgColor: "bg-green-100",
       iconColor: "text-green-600"
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for excellence in everything we do",
       bgColor: "bg-purple-100",
       iconColor: "text-purple-600"
     }
@@ -81,9 +74,8 @@ const About = () => {
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
             About StayBooker
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're passionate about making travel accessible, affordable, and unforgettable for everyone. 
-            Since our founding, we've helped millions of travelers find their perfect stay.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Making travel accessible and unforgettable for everyone since 2018.
           </p>
         </div>
 
@@ -92,22 +84,17 @@ const About = () => {
           <div className="animate-slide-up">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Founded in 2018, StayBooker started with a simple mission: to make hotel booking as easy and 
-              transparent as possible. Our founders, frustrated with hidden fees and complicated booking 
-              processes, decided to create a platform that puts travelers first.
-            </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Today, we partner with over 500,000 hotels worldwide, from boutique bed & breakfasts to 
-              luxury resorts, ensuring that every traveler finds their perfect match at the best possible price.
+              StayBooker was founded to make hotel booking simple and transparent. 
+              We partner with hotels worldwide to ensure every traveler finds their perfect stay.
             </p>
             <div className="grid grid-cols-3 gap-4 mt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600">5M+</div>
-                <div className="text-gray-600">Happy Travelers</div>
+                <div className="text-gray-600">Travelers</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600">500K+</div>
-                <div className="text-gray-600">Partner Hotels</div>
+                <div className="text-gray-600">Hotels</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600">200+</div>
@@ -126,10 +113,7 @@ const About = () => {
 
         {/* Values Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Values</h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            These core values guide everything we do and shape how we serve our customers
-          </p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Values</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
@@ -137,10 +121,7 @@ const About = () => {
                 <div className={`w-16 h-16 ${value.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110`}>
                   <value.icon className={`h-8 w-8 ${value.iconColor}`} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
+                <h3 className="text-xl font-semibold">{value.title}</h3>
               </Card>
             ))}
           </div>
@@ -148,10 +129,7 @@ const About = () => {
 
         {/* Team Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            The passionate people behind StayBooker who make your travel dreams come true
-          </p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-10">Our Team</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
@@ -165,8 +143,7 @@ const About = () => {
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.description}</p>
+                  <p className="text-blue-600 font-medium">{member.role}</p>
                 </CardContent>
               </Card>
             ))}
@@ -177,7 +154,7 @@ const About = () => {
         <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Journey?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join millions of travelers who trust StayBooker for their perfect stay
+            Join millions of travelers who trust StayBooker
           </p>
           <Button 
             size="lg" 
