@@ -90,7 +90,7 @@ const About = () => {
               </p>
               <div className="grid grid-cols-3 gap-4 mt-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600">5M+</div>
+            <div className="text-3xl font-bold text-blue-600">1M+</div>
             <div className="text-gray-600">Travelers</div>
           </div>
           <div className="text-center">
@@ -98,7 +98,7 @@ const About = () => {
             <div className="text-gray-600">Hotels</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600">200+</div>
+            <div className="text-3xl font-bold text-blue-600">20+</div>
             <div className="text-gray-600">Countries</div>
           </div>
               </div>
