@@ -100,6 +100,9 @@ const Index = () => {
               <a href="/location" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
                 Locations
               </a>
+              <a href="/services" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+                Services
+              </a>
               <a href="/about" className="text-gray-600 hover:text-blue-600 transition-all duration-300 hover:scale-105">
                 About
               </a>
@@ -131,6 +134,9 @@ const Index = () => {
               <div className="flex flex-col space-y-4">
                 <a href="/location" className="text-gray-600 hover:text-blue-600 transition-colors">
                   Locations
+                </a>
+                <a href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Services
                 </a>
                 <a href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
                   About

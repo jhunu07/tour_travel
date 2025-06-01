@@ -33,7 +33,7 @@ const About = () => {
     icon: MapPin,
     title: "200+ Countries",
     description: "Extensive global network covering every corner of the world",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop"
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e45d?w=600&h=400&fit=crop"
   }, {
     icon: Star,
     title: "Award Winning Service",
@@ -56,6 +56,7 @@ const About = () => {
             <div className="flex items-center space-x-6">
               <a href="/" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
               <a href="/location" className="text-gray-600 hover:text-blue-600 transition-colors">Locations</a>
+              <a href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
               <a href="/about" className="text-blue-600 font-medium">About</a>
               <a href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
             </div>
