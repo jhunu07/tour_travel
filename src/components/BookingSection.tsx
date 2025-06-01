@@ -34,26 +34,26 @@ const BookingSection = () => {
     {
       id: 1,
       name: "Grand Plaza Hotel",
-      location: "New York, USA",
-      price: "₹24,999",
+      location: "New Delhi, Indai",
+      price: "₹5,999",
       rating: 4.8,
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop",
-      description: "Luxury hotel in the heart of Manhattan with stunning city views and world-class amenities."
+      description: "Luxury hotel in the heart of Indai with stunning city views and world-class amenities."
     },
     {
       id: 2,
       name: "Ocean View Resort",
-      location: "Maldives",
-      price: "₹49,999",
+      location: "Goa, India",
+      price: "₹5,999",
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+      image: "https://images.unsplash.com/photo-1638310081327-5b4b5da6d155?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: "Tropical paradise resort with overwater bungalows and pristine beaches."
     },
     {
       id: 3,
       name: "Mountain Lodge",
-      location: "Swiss Alps",
-      price: "₹33,299",
+      location: "leh, India",
+      price: "₹3,299",
       rating: 4.7,
       image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=250&fit=crop",
       description: "Cozy alpine lodge with breathtaking mountain views and ski-in/ski-out access."

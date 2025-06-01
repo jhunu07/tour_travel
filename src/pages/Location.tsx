@@ -10,14 +10,26 @@ const Location = () => {
   const [selectedLocation, setSelectedLocation] = useState('');
 
   const popularLocations = [
-    { name: 'New York', country: 'USA', hotels: 1250 },
-    { name: 'Paris', country: 'France', hotels: 890 },
-    { name: 'London', country: 'UK', hotels: 750 },
-    { name: 'Tokyo', country: 'Japan', hotels: 680 },
-    { name: 'Dubai', country: 'UAE', hotels: 420 },
-    { name: 'Barcelona', country: 'Spain', hotels: 380 },
-    { name: 'Rome', country: 'Italy', hotels: 320 },
-    { name: 'Sydney', country: 'Australia', hotels: 280 }
+    { name: 'Kerala', country: 'India', hotels: 60 },
+    { name: 'Kashmir', country: 'India', hotels: 25 },
+    { name: 'Goa', country: 'India', hotels: 50 },
+    { name: 'Delhi', country: 'India', hotels: 80 },
+    { name: 'Shimla', country: 'India', hotels: 35 },
+    { name: 'Meghalaya', country: 'India', hotels: 30 },
+    { name: 'Jaipur', country: 'India', hotels: 20 },
+    { name: 'Leh', country: 'India', hotels: 10 },
+    { name: 'Agra', country: 'India', hotels: 50 },
+    { name: 'Varanasi', country: 'India', hotels: 40 },
+    { name: 'Udaipur', country: 'India', hotels: 22 },
+    { name: 'Rishikesh', country: 'India', hotels: 18 },
+    { name: 'Mysore', country: 'India', hotels: 15 },
+    { name: 'Darjeeling', country: 'India', hotels: 12 },
+    { name: 'Ooty', country: 'India', hotels: 17 },
+    { name: 'Pune', country: 'India', hotels: 28 },
+    { name: 'Amritsar', country: 'India', hotels: 21 },
+    { name: 'Mumbai', country: 'India', hotels: 100 },
+    { name: 'Chennai', country: 'India', hotels: 55 },
+    { name: 'Hyderabad', country: 'India', hotels: 45 },
   ];
 
   const filteredLocations = popularLocations.filter(location =>

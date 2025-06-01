@@ -32,7 +32,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Support",
-      content: "+1 (555) 123-4567",
+      content: "+91 9587451263",
       description: "Available 24/7 for urgent matters",
       bgColor: "bg-blue-100",
       iconColor: "text-blue-600"
@@ -40,7 +40,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Support",
-      content: "support@staybooker.com",
+      content: "support@book.com",
       description: "We respond within 2 hours",
       bgColor: "bg-green-100",
       iconColor: "text-green-600"
@@ -56,7 +56,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office Location",
-      content: "123 Travel Street, New York, NY 10001",
+      content: "RAJKOT , GUJARAT",
       description: "Visit us during business hours",
       bgColor: "bg-orange-100",
       iconColor: "text-orange-600"

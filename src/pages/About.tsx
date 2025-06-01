@@ -76,34 +76,36 @@ const About = () => {
         </div>
 
         {/* Story Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="animate-slide-up">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Born from a vision to democratize travel, StayBooker emerged as a game-changer in the hospitality industry. 
-              We leverage advanced AI and machine learning to connect travelers with their perfect accommodations.
-            </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Our proprietary matching algorithm considers over 200 factors to ensure every booking exceeds expectations, 
-              while our blockchain-powered security ensures transparent, fraud-free transactions.
-            </p>
-            <div className="grid grid-cols-3 gap-4 mt-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">5M+</div>
-                <div className="text-gray-600">Travelers</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">500K+</div>
-                <div className="text-gray-600">Hotels</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">200+</div>
-                <div className="text-gray-600">Countries</div>
+        <div className="flex justify-center mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-5xl w-full">
+            <div className="animate-slide-up">
+              <h2 className="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+          Born from a vision to democratize travel, StayBooker emerged as a game-changer in the hospitality industry. 
+          We leverage advanced AI and machine learning to connect travelers with their perfect accommodations.
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+          Our proprietary matching algorithm considers over 200 factors to ensure every booking exceeds expectations, 
+          while our blockchain-powered security ensures transparent, fraud-free transactions.
+              </p>
+              <div className="grid grid-cols-3 gap-4 mt-8">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600">5M+</div>
+            <div className="text-gray-600">Travelers</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600">500K+</div>
+            <div className="text-gray-600">Hotels</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-blue-600">200+</div>
+            <div className="text-gray-600">Countries</div>
+          </div>
               </div>
             </div>
-          </div>
-          <div className="animate-scale-in">
-            <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=400&fit=crop" alt="Our journey" className="rounded-2xl shadow-2xl" />
+            <div className="animate-scale-in">
+              
+            </div>
           </div>
         </div>
 

@@ -8,47 +8,71 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const popularDestinations = [{
     id: 1,
-    name: "Paris, France",
-    image: "https://images.unsplash.com/photo-1502602898536-47ad22581b52?w=500&h=300&fit=crop",
-    hotels: "245 hotels",
-    price: "From ₹10,000/night",
+    name: "Kerala, India",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hotels: "60 hotels",
+    price: "From ₹4,000/night",
     rating: 4.8
   }, {
     id: 2,
-    name: "Tokyo, Japan",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=500&h=300&fit=crop",
-    hotels: "189 hotels",
-    price: "From ₹7,900/night",
+    name: "Udaipur, India",
+    image: "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hotels: "30 hotels",
+    price: "From ₹3,900/night",
     rating: 4.9
   }, {
     id: 3,
-    name: "New York, USA",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=500&h=300&fit=crop",
-    hotels: "312 hotels",
-    price: "From ₹12,500/night",
+    name: "kashmir, India",
+    image: "https://images.unsplash.com/photo-1627894485200-b92fb4353967?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    hotels: "25 hotels",
+    price: "From ₹4,500/night",
     rating: 4.7
   }, {
     id: 4,
-    name: "Bali, Indonesia",
-    image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500&h=300&fit=crop",
-    hotels: "156 hotels",
+    name: "Shimla, INDIA",
+    image: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hpbWxhfGVufDB8fDB8fHww",
+    hotels: "35 hotels",
     price: "From ₹5,400/night",
     rating: 4.8
   }, {
     id: 5,
-    name: "Dubai, UAE",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500&h=300&fit=crop",
-    hotels: "98 hotels",
-    price: "From ₹15,000/night",
+    name: "Leh, India",
+    image: "https://images.unsplash.com/photo-1619837374214-f5b9eb80876d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGVofGVufDB8fDB8fHww",
+    hotels: "10 hotels",
+    price: "From ₹5,000/night",
     rating: 4.9
   }, {
     id: 6,
-    name: "London, UK",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&h=300&fit=crop",
-    hotels: "278 hotels",
-    price: "From ₹9,200/night",
+    name: "Meghalaya, India",
+    image: "https://images.unsplash.com/photo-1593813738953-fb3c93e0769d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVnaGFsYXlhfGVufDB8fDB8fHww",
+    hotels: "30 hotels",
+    price: "From ₹6,200/night",
     rating: 4.6
-  }];
+  }, {
+    id: 7,
+    name: "Jaipur, India",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=300&fit=crop",
+    hotels: "20 hotels",
+    price: "From ₹4,800/night",
+    rating: 4.8
+  }, {
+    id: 8,
+    name: "Goa, India",
+    image: "https://images.unsplash.com/photo-1642922835816-e2ac68db5c42?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D://images.unsplash.com/photo-1506748686214-e9df14d4d9f2?w=500&h=300&fit=crop",
+    hotels: "60 hotels",
+    price: "From ₹3,500/night",
+    rating: 4.9
+  }, {
+    id: 9,
+    name: "Delhi, India",
+    image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    
+    hotels: "80 hotels",
+    price: "From ₹5,000/night",
+    rating: 4.7
+  }
+  ];
+
   const features = [{
     icon: Star,
     title: "Best Prices",
@@ -321,10 +345,7 @@ const Index = () => {
               <h4 className="text-lg font-semibold mb-4">About Us</h4>
               <ul className="space-y-2 text-gray-300">
                 <li><a href="/about" className="hover:text-white transition-colors cursor-pointer">Our Story</a></li>
-                <li className="hover:text-white transition-colors cursor-pointer">Mission & Vision</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Our Team</li>
-                
-                
+            
                 <li className="hover:text-white transition-colors cursor-pointer">Privacy Policy</li>
                 <li className="hover:text-white transition-colors cursor-pointer">Terms of Service</li>
               </ul>
@@ -336,15 +357,15 @@ const Index = () => {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-blue-400" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 9587451263 </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-blue-400" />
-                  <span>support@staybooker.com</span>
+                  <span>support@book.com</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 text-blue-400 mt-1" />
-                  <span>123 Travel Street<br />New York, NY 10001</span>
+                  <span>RAJKOT GUJARAT  INDIA</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-blue-400" />
@@ -361,7 +382,7 @@ const Index = () => {
           <div className="border-t border-gray-700 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
-                © 2024 StayBooker. All rights reserved.
+                © 2025 Book. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm text-gray-400">
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
