@@ -2,7 +2,7 @@
 
 Welcome to your **Tour & Travel Explorer** project!  
 This is a beautiful, modern web app where users can explore locations, view places on maps, and discover popular travel destinations.  
-Built with ❤️ using **React**, **TypeScript**, **Vite**, and **Tailwind CSS**, and powered by **Lovable**.
+Built with ❤️ using **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
 
 ---
 
@@ -18,8 +18,7 @@ Built with ❤️ using **React**, **TypeScript**, **Vite**, and **Tailwind CSS*
 - ⚛️ **React** – UI development
 - 🧑‍💻 **TypeScript** – type-safe JavaScript
 - 🎨 **Tailwind CSS** – utility-first styling
-- 🧱 **shadcn/ui** – component styling
-- 🧩 **Lovable** – AI-powered app builder and deployer
+
 
 ---
 
