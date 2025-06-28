@@ -53,7 +53,7 @@ const Signup = () => {
                     id="firstName"
                     name="firstName"
                     type="text"
-                    placeholder="John"
+                    placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleInputChange}
                     className="pl-10"
@@ -67,7 +67,7 @@ const Signup = () => {
                   id="lastName"
                   name="lastName"
                   type="text"
-                  placeholder="Doe"
+                  placeholder="Last Name"
                   value={formData.lastName}
                   onChange={handleInputChange}
                   required
@@ -83,7 +83,7 @@ const Signup = () => {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="abc@example.com"
                   value={formData.email}
                   onChange={handleInputChange}
                   className="pl-10"

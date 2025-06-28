@@ -48,7 +48,7 @@ const Login = () => {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="abc@example.com"
                   value={formData.email}
                   onChange={handleInputChange}
                   className="pl-10"
@@ -114,19 +114,10 @@ const Login = () => {
               <div className="absolute inset-0 flex items-center">
                 <span className="w-full border-t" />
               </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-white px-2 text-gray-500">Or continue with</span>
-              </div>
+            
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Button variant="outline" className="w-full">
-                Google
-              </Button>
-              <Button variant="outline" className="w-full">
-                Facebook
-              </Button>
-            </div>
+           
           </form>
         </CardContent>
       </Card>
