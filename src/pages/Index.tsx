@@ -170,10 +170,7 @@ const Index = () => {
                     <LogIn className="h-4 w-4 mr-2" />
                     Login
                   </Button>
-                  <Button size="sm" onClick={() => window.location.href = '/signup'}>
-                    <UserPlus className="h-4 w-4 mr-2" />
-                    Sign Up
-                  </Button>
+                  
                 </div>
               </div>
             </div>}
