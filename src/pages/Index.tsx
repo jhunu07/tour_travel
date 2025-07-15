@@ -138,10 +138,7 @@ const Index = () => {
                   <LogIn className="h-4 w-4 mr-2" />
                   Login
                 </Button>
-                <Button size="sm" onClick={() => window.location.href = '/signup'} className="transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  <UserPlus className="h-4 w-4 mr-2" />
-                  Sign Up
-                </Button>
+               
               </div>
             </div>
 
